@@ -1,0 +1,22 @@
+{
+  "name": "ethereum-blocks",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ 1hive/ethereum-blocks",
+    "create-local": "graph create --node http://localhost:8020/ 1hive/ethereum-blocks",
+    "remove-local": "graph remove --node http://localhost:8020/ 1hive/ethereum-blocks",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 1hive/ethereum-blocks",
+    "deploy-rinkeby": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ 1hive/rinkeby-blocks",
+    "deploy-kovan": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ 1hive/kovan-blocks",
+    "deploy-goerli": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ 1hive/goerli-blocks",
+    "deploy-ropsten": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ 1hive/ropsten-blocks",
+    "deploy-poa": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ 1hive/poa-core-blocks",
+    "deploy-xdai": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ 1hive/xdai-blocks"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "^0.17.1",
+    "@graphprotocol/graph-ts": "0.17.0"
+  }
+}
