@@ -2,7 +2,7 @@
   "name": "ethereum-blocks",
   "license": "UNLICENSED",
   "scripts": {
-    "codegen": "graph codegen",
+    "codegen": "graph codegen --output-dir src/types/",
     "build": "graph build",
     "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ 1hive/ethereum-blocks",
     "create-local": "graph create --node http://localhost:8020/ 1hive/ethereum-blocks",
@@ -16,7 +16,7 @@
     "deploy-xdai": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ 1hive/xdai-blocks"
   },
   "dependencies": {
-    "@graphprotocol/graph-cli": "^0.17.1",
+    "@graphprotocol/graph-cli": "^0.19.0",
     "@graphprotocol/graph-ts": "0.17.0"
   }
 }
